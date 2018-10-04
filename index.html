@@ -5,18 +5,25 @@
   <body>
     <h1>Thermostat</h1>
     <section>
-      <h1 id="temperature"></h1>
       <p>
+        <h1>Current temperature:<span id="temperature"></span></h1>
         <button id="temperature-up">Up</button>
         <button id="temperature-down">Down</button>
-        <button id="temperature-reset">Reset</button>
-        <!-- power saving mode is <span id="power-saving-status">on</span> -->
-        <button id="powersaving-on">Power Saving Mode On</button>
-        <button id="powersaving-off">Power Saving Mode Off</button>
-        <button id="energy-usage">Energy usage</button>
+        <button id="temperature-reset">Reset</button><br>
+      </p>
+      <p>
+        power saving mode is <b><span id="power-saving-mode">on</span></b><br>
+        <button id="power-saving-on">Power Saving Mode On</button><br>
+        <button id="power-saving-off">Power Saving Mode Off</button><br>
+      </p>
+      <p>
+        <button id="energy-usage">Energy usage</button><br>
+        <h1 id="energy-status">Energy usage status</h1>
       </p>
     </section>
-  <!-- script files -->
-  <script src="src/Thermostat.js"></script>
+    <!-- script files -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="src/script.js"></script>
+    <script src="src/Thermostat.js"></script>
   </body>
 </html>
